@@ -16,8 +16,8 @@ public class Validate {
 		driver = DriverManager.getDriver();
 		driver.get("https:google.com");
 		driver.findElement(By.name("q")).sendKeys("Sowmya Moturu");
-		driver.findElement(By.cssSelector("input[value = 'Google Search']")).click();
-		System.out.print(driver.findElement(By.id("result-stats")).getText());
+//		driver.findElement(By.cssSelector("input[value = 'Google Search']")).click();
+//		System.out.print(driver.findElement(By.id("result-stats")).getText());
 		driver.quit();
 		;
 	}
