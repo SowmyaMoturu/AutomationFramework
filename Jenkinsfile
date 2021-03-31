@@ -8,7 +8,5 @@ pipeline {
     }
 
   }
-  tools {
-    maven 'MAVEN'
-  }
+ 
 }
