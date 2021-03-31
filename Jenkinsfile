@@ -3,10 +3,10 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'D:\\apache-maven-3.6.3\\bin\\mvn.cmd test'
+        tool(name: 'MAVEN', type: 'maven')
+        bat 'mvn test'
       }
     }
 
   }
- 
 }
