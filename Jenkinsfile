@@ -2,9 +2,8 @@ pipeline {
   agent any
   stages {
     stage('Build') {
-      steps {
-        tool(name: 'MAVEN', type: 'maven')
-        bat 'mvn test'
+      steps 
+        bat 'D:\apache-maven-3.6.3\bin\mvn.cmd test'
       }
     }
 
