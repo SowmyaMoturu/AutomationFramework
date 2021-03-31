@@ -1,15 +1,14 @@
 pipeline {
   agent any
-   tools {
-        // Install the Maven version configured as "M3" and add it to the path.
-        maven "MAVEN"
-    }
   stages {
     stage('Build') {
       steps {
-        bat 'mvn test'
+        bat 'D:\\apache-maven-3.6.3\\bin\\mvn.cmd test'
       }
     }
 
+  }
+  tools {
+    maven 'MAVEN'
   }
 }
